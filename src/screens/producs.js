@@ -82,7 +82,7 @@ const[ inp,setInp]=useState('none')
       
       
           </ScrollView>
-          <Button color='coral' title='Suivant' onPress={()=> navigation.navigate("fer5")} />
+          <Button color='coral' title='Valider' onPress={()=> navigation.navigate("presentation")} />
         </Content>
       </Container>
     );

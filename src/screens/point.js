@@ -81,7 +81,7 @@ const[ inp,setInp]=useState('none')
         </ListItem>
 
           </ScrollView>
-          <Button color='coral' title='Suivant' onPress={()=> navigation.navigate("myform")} />
+          <Button color='coral' title='Valider' onPress={()=> navigation.navigate("presentation")} />
         </Content>
       </Container>
     );

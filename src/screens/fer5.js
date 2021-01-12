@@ -24,7 +24,7 @@ const[ inp,setInp]=useState('none')
         <Content padder>
         <View>
         <Text style={{fontSize:26, fontWeight:'bold', textAlign:"center",marginBottom:10}}>
-            Fer FE400
+            Fer FE500B
         </Text></View>
           <ScrollView>
         
@@ -81,7 +81,7 @@ const[ inp,setInp]=useState('none')
           </ListItem>
       
           </ScrollView>
-          <Button color='coral' title='Suivant' onPress={()=> navigation.navigate("fer8")} />
+          <Button color='coral' title='Valider' onPress={()=> navigation.navigate("presentation")} />
         </Content>
       </Container>
     );

@@ -6,7 +6,7 @@ import Swiper from 'react-native-swiper'
 const Home= ({navigation}) => {
  const {width,height}=Dimensions.get('window')
     return (
-      <Container style={{justifyContent:"center"}}> 
+      <Container style={{justifyContent:"center",height:'100%'}}> 
        <StatusBar hidden={true}/>
       <Text 
       style={{fontWeight:'bold',fontSize:56,textAlign:"center",fontStyle:"italic"}}>
@@ -26,7 +26,8 @@ const Home= ({navigation}) => {
         <Image source={ require('../images/s1.png')} style={{width:width,height:400,position:'relative',}} />
         <Image source={ require('../images/s2.png')} style={{width:width,height:400,position:'relative',}} />
         <Image source={ require('../images/s3.png')} style={{width:width,height:400,position:'relative',}} />
-        
+        <Image source={ require('../images/nell.jpg')} style={{width:width,height:400,position:'relative',}} />
+
         </Swiper>
         
             <Button color='coral' title='Commencez' onPress={()=> navigation.navigate("presentation")} />

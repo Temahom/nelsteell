@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\diatt\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add react-native-video
+  C:\Program Files\nodejs\node.exe C:\Users\diatt\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add axios
 
 PATH: 
   C:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\Program Files (x86)\cmder\bin;C:\Program Files (x86)\cmder\vendor\bin;C:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\Program Files (x86)\cmder\vendor\conemu-maximus5;C:\Program Files (x86)\cmder\vendor\conemu-maximus5\ConEmu;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\cmder;C:\xampp\php;C:\composer;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Program Files\Sublime Text 3;C:\xampp\mysql\bin;C:\Program Files\MongoDB\Server\4.2\bin;C:\Program Files\nodejs\;C:\src\flutter\bin;C:\Users\diatt\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\diatt\AppData\Local\Programs\Python\Python38-32\;C:\Users\diatt\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\diatt\AppData\Local\Programs\Python\Python37\;C:\Users\diatt\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\diatt\AppData\Roaming\Composer\vendor\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2020.3\bin;C:\Users\diatt\AppData\Roaming\npm;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\cmder
@@ -32,6 +32,8 @@ npm manifest:
       "@react-navigation/stack": "^5.12.8",
       "axios": "^0.21.1",
       "expo": "~40.0.0",
+      "expo-av": "^8.7.0",
+      "expo-font": "~8.4.0",
       "expo-status-bar": "~1.0.3",
       "native-base": "^2.15.0",
       "react": "16.13.1",
@@ -42,9 +44,9 @@ npm manifest:
       "react-native-safe-area-context": "3.1.9",
       "react-native-screens": "~2.15.0",
       "react-native-swiper": "^1.6.0",
+      "react-native-video": "^5.1.0-alpha8",
       "react-native-web": "~0.13.12",
-      "react-widgets": "^5.0.0-beta.22",
-      "expo-font": "~8.4.0"
+      "react-widgets": "^5.0.0-beta.22"
     },
     "devDependencies": {
       "@babel/core": "~7.9.0"

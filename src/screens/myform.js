@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import {  View } from 'react-native';
-import { Container, Content, Form,Item, Input, Label,Text,Button,} from 'native-base';
+import { Container, Content, Form,Item, Input, Label,Text,Button, Footer, FooterTab,Icon } from 'native-base';
 import axios from 'axios'
  
 
@@ -9,22 +9,25 @@ export default function Myform({navigation}) {
      const [email,setEmail]=useState('');
      const [tel,setTel]=useState('');
      const [entre,setEntre]=useState('');
-    
+     let _data = {
+      name: nom,
+      email: email,
+      msg:tel +' '+entre
+    }
      const envoyer=()=>{
-     
-       axios.post('http://localhost/Api/Api/', {
-        name: nom,
-        email: email,
-        msg:tel +' '+entre
-
-      })
-      .then(function (response) {
-        console.log(response);
-      })
-      .catch(function (error) {
-        console.log(error);
+      
+      axios({
+        method: 'post',
+        url: 'http://192.168.1.13/Api/Api/',
+        data: {       
+      "name": nom,
+      "email": email,
+      "msg":tel +' '+entre
+        }
+      }).then(response=>{
+        console.log(response)
       });
-      console.log(nom)
+
      }
  return (
             <Container>
@@ -70,6 +73,26 @@ export default function Myform({navigation}) {
               </View>
       </Form>
     </Content>
+    <Footer>
+          <FooterTab style={{backgroundColor:'coral'}}>
+            <Button
+             onPress={()=> navigation.navigate("Accueil")}
+            >
+              <Icon style={{color:'white'}} name="home" />
+            </Button>
+            <Button active style={{backgroundColor:'coral'}}
+            onPress={()=> navigation.navigate("myform")}
+            >
+              <Icon style={{color:'white'}} active name="cart" />
+            </Button>
+            
+            <Button
+            onPress={()=> navigation.navigate("Apropos")}
+            >
+              <Icon style={{color:'white'}} name="person" />
+            </Button>
+          </FooterTab>
+        </Footer>
   </Container>
   )
 
